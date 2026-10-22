@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "Please cite the published IEEE paper using CITATION.bib."
+title: "CMAR-search: Commonsense and Memory Augmented Reasoning for Object Search in Dynamic Interactive Environments"
+type: software
+authors:
+  - family-names: Liao
+    given-names: Kaiyao
+  - family-names: Li
+    given-names: Qingfeng
+  - family-names: Zhang
+    given-names: Xinlei
+  - family-names: Chen
+    given-names: Chen
+  - family-names: Sun
+    given-names: Qing
+  - family-names: Niu
+    given-names: Jianwei
+repository-code: "https://github.com/starry-curry-30/CMAR-search"
+url: "https://starry-curry-30.github.io/cmar-project/"
+references:
+  - type: conference-paper
+    title: "CMAR-search: Commonsense and Memory Augmented Reasoning for Object Search in Dynamic Interactive Environments"
+    authors:
+      - family-names: Liao
+        given-names: Kaiyao
+      - family-names: Li
+        given-names: Qingfeng
+      - family-names: Zhang
+        given-names: Xinlei
+      - family-names: Chen
+        given-names: Chen
+      - family-names: Sun
+        given-names: Qing
+      - family-names: Niu
+        given-names: Jianwei
+    doi: 10.1109/ICRA57385.2026.11697035
+    year: 2026
+    start: 18586
+    end: 18593
+    collection-title: "2026 IEEE International Conference on Robotics and Automation (ICRA)"

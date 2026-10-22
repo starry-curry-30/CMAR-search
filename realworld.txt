@@ -1,0 +1,19 @@
+Room 1:
+table1 (50, 150) movable object: pepper
+table2 (150,150) movable object: apple, bread
+oven (50,125) movable object: none
+rice_cooker (50,175) movable object: none
+fridge (100,350) movable object: none
+lounge_chair (275,150) movable object: Pillow1
+sofa (425,25) movable object: Pillow2, Pillow3
+table3 (425,125) movable object: cup, Remote Control
+cabinet1 (275,350) movable object: none
+table4 (425,350) movable object: TV
+table5 (550,350) movable object: plant
+
+Room2:
+table6 (750,25) movable object: computer, book, 
+cabinet2 (875,25) movable object: none
+table7 (650,25) movable object: desk lamp
+table8 (875,375) movable object: none
+bed (750,300) movable object: Quilt, pillow4
