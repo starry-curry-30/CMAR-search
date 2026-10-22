@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/cmar-logo.svg" width="440" alt="CMAR-search"></p>
+<p align="center"><img src="docs/assets/cmar-logo.png" width="360" alt="CMAR-search"></p>
 
 # CMAR-search
 
