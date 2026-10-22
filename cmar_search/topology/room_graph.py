@@ -9,7 +9,7 @@ from igibson import object_states
 from scipy.spatial import distance_matrix
 from scipy.spatial.distance import cdist
 
-from moma_llm.utils.constants import CLASS_NAME_TO_CLASS_ID, NODETYPE
+from cmar_search.utils.constants import CLASS_NAME_TO_CLASS_ID, NODETYPE
 
 
 def get_body_properties(simulator, bid, obj_to_neglect: list, opened_windows):

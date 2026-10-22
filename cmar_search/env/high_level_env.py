@@ -23,14 +23,14 @@ from igibson.external.pybullet_tools.utils import (get_link_pose,
                                                    link_from_name,
                                                    set_base_values_with_z)
 
-from moma_llm.env.env import OurIGibsonEnv, create_igibson_env
-from moma_llm.navigation.navigation import (PyAstarHelper,
+from cmar_search.env.env import OurIGibsonEnv, create_igibson_env
+from cmar_search.navigation.navigation import (PyAstarHelper,
                                              cand_poses_around_object,
                                              drive_to_target_position,
                                              normalize_angle_minuspi_pi,
                                              plan_waypoints, turn_full_circle,
                                              turn_to_target_point)
-from moma_llm.utils.constants import OCCUPANCY
+from cmar_search.utils.constants import OCCUPANCY
 
 
 class HighLevelEnv(gymnasium.Wrapper):

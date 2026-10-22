@@ -24,12 +24,12 @@ from igibson.termination_conditions.termination_condition_base import \
 from igibson.termination_conditions.timeout import Timeout
 from igibson.utils.utils import l2_distance, restoreState
 
-from moma_llm.llm.llm import LLM
-from moma_llm.navigation.navigation import (PyAstarHelper, find_floor_idx,
+from cmar_search.llm.llm import LLM
+from cmar_search.navigation.navigation import (PyAstarHelper, find_floor_idx,
                                              get_circular_kernel,
                                              plan_waypoints)
-from moma_llm.tasks.object_sampling import add_objects_from_our_distribution
-from moma_llm.utils.constants import (BLOCKING_DOORS, CLASS_NAME_TO_CLASS_ID,
+from cmar_search.tasks.object_sampling import add_objects_from_our_distribution
+from cmar_search.utils.constants import (BLOCKING_DOORS, CLASS_NAME_TO_CLASS_ID,
                                        EXTERIOR_DOORS, OCCUPANCY)
 
 log = logging.getLogger(__name__)

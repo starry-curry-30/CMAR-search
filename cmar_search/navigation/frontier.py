@@ -7,8 +7,8 @@ import cv2
 import numpy as np
 import skimage
 
-from moma_llm.topology.topology import TopologyMapping
-from moma_llm.utils.constants import FRONTIER_CLASSIFICATION, OCCUPANCY
+from cmar_search.topology.topology import TopologyMapping
+from cmar_search.utils.constants import FRONTIER_CLASSIFICATION, OCCUPANCY
 
 
 def find_frontiers(occupancy_map, agent_pos_pixel, smoothing_kernel_size: int):   

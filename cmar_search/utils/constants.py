@@ -7,7 +7,7 @@ from enum import IntEnum, Enum
 import numpy as np
 from pathlib import Path
 
-from moma_llm.tasks.patched_scene import CLASS_NAME_TO_CLASS_ID
+from cmar_search.tasks.patched_scene import CLASS_NAME_TO_CLASS_ID
 
 PROJECT_DIR = Path(__file__).parent.parent.parent
 PACKAGE_DIR = Path(__file__).parent.parent

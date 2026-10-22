@@ -20,16 +20,16 @@ from matplotlib.collections import LineCollection
 from matplotlib.patches import Polygon
 from PIL import Image
 import open3d as o3d
-from moma_llm.navigation.navigation import find_floor_idx
-from moma_llm.tasks.object_search_task import ObjectSearchTask
-from moma_llm.topology.room_graph import (create_room_object_graph,
+from cmar_search.navigation.navigation import find_floor_idx
+from cmar_search.tasks.object_search_task import ObjectSearchTask
+from cmar_search.topology.room_graph import (create_room_object_graph,
                                            get_closest_node)
-from moma_llm.topology.simpleslam import SimpleSlam
-from moma_llm.topology.topology import TopologyMapping, detect_rooms
-from moma_llm.topology.graph import plot_graph
-from moma_llm.utils.constants import (BLOCKING_DOORS, EXTERIOR_DOORS,
+from cmar_search.topology.simpleslam import SimpleSlam
+from cmar_search.topology.topology import TopologyMapping, detect_rooms
+from cmar_search.topology.graph import plot_graph
+from cmar_search.utils.constants import (BLOCKING_DOORS, EXTERIOR_DOORS,
                                        NODETYPE, OCCUPANCY)
-from moma_llm.utils.utils import get_obj_bounding_box
+from cmar_search.utils.utils import get_obj_bounding_box
 import time
 
 

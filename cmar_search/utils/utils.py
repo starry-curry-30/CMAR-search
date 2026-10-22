@@ -8,7 +8,7 @@ import numpy as np
 import trimesh
 import igibson
 from igibson.utils.utils import quat_pos_to_mat
-from moma_llm.utils.constants import PROJECT_DIR
+from cmar_search.utils.constants import PROJECT_DIR
 
 
 def get_config(config_file: str) -> Path:

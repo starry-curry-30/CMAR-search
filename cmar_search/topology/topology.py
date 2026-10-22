@@ -18,10 +18,10 @@ from scipy.spatial import Voronoi, voronoi_plot_2d
 from scipy.spatial.distance import cdist
 from sklearn.neighbors import KernelDensity
 
-from moma_llm.topology.graph import sparsify_graph, plot_graph
-from moma_llm.navigation.navigation import get_circular_kernel
-from moma_llm.topology.room_graph import get_body_properties
-from moma_llm.utils.constants import CLASS_NAME_TO_CLASS_ID, OCCUPANCY
+from cmar_search.topology.graph import sparsify_graph, plot_graph
+from cmar_search.navigation.navigation import get_circular_kernel
+from cmar_search.topology.room_graph import get_body_properties
+from cmar_search.utils.constants import CLASS_NAME_TO_CLASS_ID, OCCUPANCY
 
 
 def boundary_integral(sdf, x1, y1, x2, y2, normalize):

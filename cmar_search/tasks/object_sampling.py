@@ -25,9 +25,9 @@ from igibson.utils.assets_utils import (get_ig_category_path,
 from igibson.utils.utils import restoreState
 from IPython import embed
 
-from moma_llm.llm.sbert import SentenceBERT
-from moma_llm.tasks.patched_scene import REPLACED_CATEGORIES
-from moma_llm.utils.constants import PACKAGE_DIR, TEST_SCENES, TRAINING_SCENES
+from cmar_search.llm.sbert import SentenceBERT
+from cmar_search.tasks.patched_scene import REPLACED_CATEGORIES
+from cmar_search.utils.constants import PACKAGE_DIR, TEST_SCENES, TRAINING_SCENES
 
 
 def load_object_distribution_prior():
@@ -247,7 +247,7 @@ def relation_to_str(relation):
 
 
 def get_sbert_matching(categories, possible_categories, score_thresh: float = 0.0, closest_k: int = 0):
-    from moma_llm.llm.sbert import SentenceBERT
+    from cmar_search.llm.sbert import SentenceBERT
     sbert = SentenceBERT()
     sim = sbert.compute_cooccurrence_bipartite(categories, possible_categories)
     closest_categories = np.argsort(sim, axis=1)[:,-closest_k:]

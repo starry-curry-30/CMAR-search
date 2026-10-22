@@ -10,8 +10,8 @@ import networkx as nx
 import numpy as np
 from igibson import object_states
 
-from moma_llm.env.llm_env import LLMEnv
-from moma_llm.utils.constants import NODETYPE, POSSIBLE_ROOMS
+from cmar_search.env.llm_env import LLMEnv
+from cmar_search.utils.constants import NODETYPE, POSSIBLE_ROOMS
 
 
 class GreedyBaseline(LLMEnv):

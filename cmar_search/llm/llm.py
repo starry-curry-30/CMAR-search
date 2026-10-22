@@ -22,7 +22,7 @@ from pygments import highlight
 from pygments.formatters import Terminal256Formatter, TerminalFormatter
 from pygments.lexers import PythonLexer
 from sty import fg
-from moma_llm.utils.constants import NODETYPE, POSSIBLE_ROOMS
+from cmar_search.utils.constants import NODETYPE, POSSIBLE_ROOMS
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import json
 import os
@@ -35,7 +35,7 @@ from sklearn.cluster import KMeans
 from sklearn.cluster import DBSCAN
 from sklearn.cluster import OPTICS
 from sklearn.neighbors import NearestNeighbors
-from moma_llm.topology.room_graph import create_room_object_graph
+from cmar_search.topology.room_graph import create_room_object_graph
 # Public release: configure credentials through environment variables only.
 client = None
 

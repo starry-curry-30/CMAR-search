@@ -15,9 +15,9 @@ import json
 
 from igibson.utils.constants import MAX_CLASS_COUNT, SemanticClass
 
-from moma_llm.utils.constants import OCCUPANCY, CLASS_NAME_TO_CLASS_ID, CLASS_ID_TO_CLASS_NAME
-from moma_llm.navigation.frontier import find_frontiers, classify_frontiers
-from moma_llm.utils.utils import get_obj_bounding_box
+from cmar_search.utils.constants import OCCUPANCY, CLASS_NAME_TO_CLASS_ID, CLASS_ID_TO_CLASS_NAME
+from cmar_search.navigation.frontier import find_frontiers, classify_frontiers
+from cmar_search.utils.utils import get_obj_bounding_box
 
 
 @njit(parallel=False)

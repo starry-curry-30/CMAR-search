@@ -16,16 +16,16 @@ from matplotlib.artist import Artist
 from matplotlib.patches import FancyBboxPatch
 from scipy.spatial import distance_matrix
 
-from moma_llm.env.env import OurIGibsonEnv
-from moma_llm.env.high_level_env import HighLevelEnv
-from moma_llm.llm.llm import LLM, Conversation, inflect_engine
-from moma_llm.topology.room_graph import get_closest_node
-from moma_llm.utils.constants import FRONTIER_CLASSIFICATION, NODETYPE
-from moma_llm.llm.sbert import SentenceBERT
-from moma_llm.navigation.navigation import (PyAstarHelper, find_floor_idx,
+from cmar_search.env.env import OurIGibsonEnv
+from cmar_search.env.high_level_env import HighLevelEnv
+from cmar_search.llm.llm import LLM, Conversation, inflect_engine
+from cmar_search.topology.room_graph import get_closest_node
+from cmar_search.utils.constants import FRONTIER_CLASSIFICATION, NODETYPE
+from cmar_search.llm.sbert import SentenceBERT
+from cmar_search.navigation.navigation import (PyAstarHelper, find_floor_idx,
                                              get_circular_kernel,
                                              plan_waypoints)
-from moma_llm.utils.constants import (BLOCKING_DOORS, CLASS_NAME_TO_CLASS_ID,
+from cmar_search.utils.constants import (BLOCKING_DOORS, CLASS_NAME_TO_CLASS_ID,
                                        EXTERIOR_DOORS, OCCUPANCY)
 import pyastar
 DIST_MAPPING = OrderedDict({

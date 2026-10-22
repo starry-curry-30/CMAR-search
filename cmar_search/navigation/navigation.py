@@ -11,7 +11,7 @@ from igibson.envs.igibson_env import iGibsonEnv
 from igibson.external.pybullet_tools.utils import set_base_values_with_z
 from igibson.utils.utils import cartesian_to_polar
 
-from moma_llm.utils.constants import MAX_TURN_ANGLE, OCCUPANCY
+from cmar_search.utils.constants import MAX_TURN_ANGLE, OCCUPANCY
 
 
 def cand_poses_around_object(object_pos, object_yaw, yaw_extent, radius, num_proposals=20):

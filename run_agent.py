@@ -4,7 +4,7 @@
 # this software and related documentation without an express license agreement
 # from Toyota Motor Europe NV/SA is strictly prohibited.
 # NOTE: monkey-patching; needs to be imported before any other file imports it
-from moma_llm.tasks.patched_scene import MonkeyPatchedInteractiveIndoorScene
+from cmar_search.tasks.patched_scene import MonkeyPatchedInteractiveIndoorScene
 from igibson.scenes import igibson_indoor_scene
 igibson_indoor_scene.InteractiveIndoorScene._add_object = MonkeyPatchedInteractiveIndoorScene._add_object
 igibson_indoor_scene.InteractiveIndoorScene._orig_add_object = MonkeyPatchedInteractiveIndoorScene._orig_add_object
@@ -24,17 +24,17 @@ from igibson.utils.utils import parse_config
 from sklearn.metrics import auc
 import wandb
 import networkx as nx
-from moma_llm.env.baselines import (GreedyBaseline,
+from cmar_search.env.baselines import (GreedyBaseline,
                                     RandomBaseline)
-from moma_llm.env.env import OurIGibsonEnv, create_igibson_env
-from moma_llm.env.llm_env import JsonLLMEnv, LLMEnv
-from moma_llm.llm.llm import LLM
-from moma_llm.utils.constants import TEST_SCENES, TRAINING_SCENES
-from moma_llm.utils.utils import get_config
-from moma_llm.tasks.object_sampling import add_objects_from_our_distribution, change_environment
+from cmar_search.env.env import OurIGibsonEnv, create_igibson_env
+from cmar_search.env.llm_env import JsonLLMEnv, LLMEnv
+from cmar_search.llm.llm import LLM
+from cmar_search.utils.constants import TEST_SCENES, TRAINING_SCENES
+from cmar_search.utils.utils import get_config
+from cmar_search.tasks.object_sampling import add_objects_from_our_distribution, change_environment
 
 def create_env(cfg, agent: str, config_file: str, scene_id: str, control_freq: float, cheap: bool, seed: int) -> LLMEnv:
-    if agent == "moma_llm":
+    if agent == "cmar_search":
         env_fn = LLMEnv
     elif agent == "json_llm":
         env_fn = JsonLLMEnv
@@ -338,7 +338,7 @@ def evaluate_scene(config_file: str, cfg, scene_id: str, tot_ep: int) -> list:
 def main(): 
     np.set_printoptions(precision=3, suppress=True)
 
-    config_file = get_config("moma_llm.yaml")
+    config_file = get_config("cmar_search.yaml")
     # NOTE: igibson will reload the config file, so changes here won't be relfected! Just for wandb logging
     cfg = parse_config(config_file)
     if cfg["seed"] > 0: 

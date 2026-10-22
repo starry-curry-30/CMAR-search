@@ -11,8 +11,8 @@ import networkx as nx
 import numpy as np
 from scipy.spatial import distance_matrix
 
-import moma_llm.topology
-from moma_llm.utils.constants import NODETYPE
+import cmar_search.topology
+from cmar_search.utils.constants import NODETYPE
 
 
 def aggregate_close_nodes(graph, voxel_size: float, thres_meter: float):
